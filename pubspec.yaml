@@ -26,7 +26,6 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 dependencies:
-  another_flushbar: ^1.12.30
   bloc: ^8.1.4
   cupertino_icons: ^1.0.6
   equatable: ^2.0.5
@@ -36,7 +35,6 @@ dependencies:
   flutter_svg: ^2.0.10+1
   google_fonts: ^6.2.1
   skeletonizer: ^1.4.2
-  slide_switcher: ^1.1.2
 
 dev_dependencies:
   # The "flutter_lints" package below contains a set of recommended lints to

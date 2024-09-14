@@ -5,7 +5,7 @@ import 'package:mood_diary/di/app_depends.dart';
 import 'package:mood_diary/di/app_depends_provider.dart';
 import 'package:mood_diary/features/calendary/domain/cubit/calendary_cubit.dart';
 import 'package:mood_diary/features/mood_diary/domain/cubit/emotion/emotion_cubit.dart';
-import 'package:mood_diary/features/mood_diary/domain/cubit/mood_diary_cubit.dart';
+import 'package:mood_diary/features/mood_diary/domain/cubit/mood_diary/mood_diary_cubit.dart';
 import 'package:mood_diary/features/mood_diary/ui/mood_diary_screen.dart';
 
 class App extends StatelessWidget {

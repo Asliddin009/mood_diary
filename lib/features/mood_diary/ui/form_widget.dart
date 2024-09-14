@@ -3,9 +3,9 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:mood_diary/app/ui_kit/components/app_container.dart';
 import 'package:mood_diary/app/ui_kit/components/app_text_button.dart';
 import 'package:mood_diary/features/mood_diary/domain/cubit/emotion/emotion_cubit.dart';
-import 'package:mood_diary/features/mood_diary/domain/cubit/mood_diary_cubit.dart';
+import 'package:mood_diary/features/mood_diary/domain/cubit/mood_diary/mood_diary_cubit.dart';
 import 'package:mood_diary/features/mood_diary/ui/components/mood_slider.dart';
-import 'package:mood_diary/features/mood_diary/ui/emotion_widget.dart';
+import 'package:mood_diary/features/mood_diary/ui/components/emotion_widget.dart';
 
 class FormWidget extends StatefulWidget {
   const FormWidget({super.key});
@@ -153,9 +153,6 @@ class _FormWidgetState extends State<FormWidget> {
                             ),
                           ),
                         );
-                        // ScaffoldMessenger.of(context).showSnackBar(
-                        // ignore: lines_longer_than_80_chars
-                        //     const SnackBar(content: Text('Данные сохранены')));
                       });
                     },
                     text: 'Сохранить',

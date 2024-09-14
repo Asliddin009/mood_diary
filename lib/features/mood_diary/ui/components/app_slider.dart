@@ -37,30 +37,6 @@ class _AppSliderState extends State<AppSlider> {
                   child: const _RowMarker(),
                 ),
               ),
-              // Align(
-              //   alignment: const Alignment(-1, 0),
-              //   child: Container(
-              //     width: widget.width,
-              //     margin: const EdgeInsets.only(
-              //       top: 15,
-              //     ),
-              //     height: 7,
-              //     decoration: const BoxDecoration(
-              //         color: Colors.grey,
-              //         borderRadius: BorderRadius.all(Radius.circular(25))),
-              //     child: Align(
-              //       alignment: const Alignment(-1, 0),
-              //       child: Container(
-              //         width: (widget.width / 2) + (widget.width / 2) * x,
-              //         height: 7,
-              //         decoration: const BoxDecoration(
-              //             color: Colors.orange,
-              // ignore: lines_longer_than_80_chars
-              //             borderRadius: BorderRadius.all(Radius.circular(25))),
-              //       ),
-              //     ),
-              //   ),
-              // ),
               Align(
                 alignment: Alignment.centerLeft,
                 child: Slider(
@@ -77,36 +53,6 @@ class _AppSliderState extends State<AppSlider> {
                   },
                 ),
               ),
-              // Align(
-              //   alignment: Alignment(x, 0),
-              //   child: GestureDetector(
-              //     onHorizontalDragUpdate: (details) {
-              //       final newX = x + details.delta.dx / 150;
-              //       if (newX > 1) {
-              //         updateX(1);
-              //       } else if (newX < -1) {
-              //         updateX(-1);
-              //       } else {
-              //         updateX(newX);
-              //       }
-              //     },
-              //     onPanUpdate: (DragUpdateDetails details) {},
-              //     onPanEnd: (details) {
-              //       updateX(0);
-              //     },
-              //     child: Container(
-              // ignore: lines_longer_than_80_chars
-              //       margin: const EdgeInsets.only(top: 15, left: 20, right: 20),
-              //       width: 25,
-              //       height: 25,
-              //       decoration: BoxDecoration(
-              //           color: Colors.orange,
-              //           border: Border.all(width: 5, color: Colors.white),
-              //           borderRadius:
-              //               const BorderRadius.all(Radius.circular(25))),
-              //     ),
-              //   ),
-              // ),
             ],
           ),
         ),
@@ -165,22 +111,3 @@ class _RowMarker extends StatelessWidget {
     );
   }
 }
-
-// double _roundToNearest(double value) {
-//   // Список всех возможных значений.
-//   List<double> possibleValues = [-1, -0.7, -0.35, 0, 0.35, 0.7, 1];
-
-//   // Функция находит ближайшее значение.
-//   double closest = possibleValues[0];
-//   double minDistance = (value - closest).abs();
-
-//   for (double candidate in possibleValues) {
-//     double distance = (value - candidate).abs();
-//     if (distance < minDistance) {
-//       closest = candidate;
-//       minDistance = distance;
-//     }
-//   }
-
-//   return closest;
-// }
